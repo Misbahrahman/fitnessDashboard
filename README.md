@@ -1,12 +1,40 @@
-# React + Vite
+# HealthCare Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+##Deployed Link -> https://vercel.com/misbahur-rahmans-projects/fitness-dashboard
 
-Currently, two official plugins are available:
+A modern healthcare dashboard built with React and CSS Grid. Features a clean interface for viewing patient information, health metrics, and appointment scheduling.
+![image](https://github.com/user-attachments/assets/3612abdb-2c84-42ce-880e-5a72925bb871)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
 
-## Expanding the ESLint configuration
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## Getting Started
+
+1. Clone the repository
+```bash
+git clone https://github.com/Misbahrahman/fitnessDashboard
+cd healthcare-dashboard
+```
+
+2. Install dependencies
+```bash
+npm install
+```
+
+3. Start the development server
+```bash
+npm start
+```
+
+4. Open your browser and navigate to `http://localhost:3000`
+
+## File Structure
+
+```
+src/
+├── components/
+│   ├── CalendarView.js
+│   └── ...
+├── styles/
+│   └── main.css
+└── App.js
+```

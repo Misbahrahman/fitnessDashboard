@@ -704,6 +704,7 @@ body {
 
   .navigation-section {
     flex: none;
+    display: flex;
   }
 
   .nav-Menu {

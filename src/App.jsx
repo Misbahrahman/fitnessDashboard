@@ -1,13 +1,14 @@
-import LeftPanel from './components/leftPanel';
-import MiddlePanel from './components/middlePanel';
-import RightPanel from './components/rightPanel';
+import DashboardOverview from "./components/dashboard-main-components/DashboardOverview";
+import CalenderPanel from "./components/dashboard-main-components/CalenderPanel";
+import SideBar from "./components/side-bar/SideBar";
+
 
 const App = () => {
   return (
     <div className="app">
-      <LeftPanel />
-      <MiddlePanel />
-      <RightPanel />
+      <SideBar />
+      <DashboardOverview />
+      <CalenderPanel />
     </div>
   );
 };

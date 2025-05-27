@@ -1,6 +1,6 @@
 # HealthCare Dashboard
 
-##Deployed Link -> https://vercel.com/misbahur-rahmans-projects/fitness-dashboard
+##Deployed Link ->[ [https://vercel.com/misbahur-rahmans-projects/fitness-dashboard](https://fitness-dashboard-inky.vercel.app/)](https://fitness-dashboard-inky.vercel.app/)
 
 A modern healthcare dashboard built with React and CSS Grid. Features a clean interface for viewing patient information, health metrics, and appointment scheduling.
 ![image](https://github.com/user-attachments/assets/3612abdb-2c84-42ce-880e-5a72925bb871)

@@ -4,8 +4,7 @@ import NavItem from "./NavItem";
 const SideBar = () => {
   return (
     <div className="left-panel">
-
-      <div className="logo-section">
+      <div className="logoSection">
         <h1 className="logo">
           <span className="logo-health">Health</span>
           <span className="logo-care">care.</span>
@@ -13,15 +12,15 @@ const SideBar = () => {
       </div>
       
       <div className="navigation-section">
-        <h3 className="nav-title">General</h3>
-        <nav className="nav-menu">
+        <h3 className="navig-title">General</h3>
+        <nav className="navMenu">
           {navigationItems.slice(0 , 5).map((item, index) => (
             <NavItem key={index} item={item} index={index} />
           ))}
         </nav>
 
-        <h3 className="nav-title">Tools</h3>
-        <nav className="nav-menu">
+        <h3 className="navig-title">Tools</h3>
+        <nav className="navMenu">
           {navigationItems.slice(5 , 7).map((item, index) => (
             <NavItem key={index} item={item} index={index} />
           ))}

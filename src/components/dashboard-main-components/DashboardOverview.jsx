@@ -19,9 +19,9 @@ const DashboardOverview = () => {
         <h1>Dashboard</h1>
       </div>
 
-      <div className="dashboard-content-grid">
+      <div className="dashboardGrid">
         <AnatomySection />
-        <div className="health-cards-section">
+        <div className="card-section">
           {healthData.map((item, index) => (
             <HealthStatusCard key={index} item={item} index={index} />
           ))}

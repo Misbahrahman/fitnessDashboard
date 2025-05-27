@@ -3,7 +3,6 @@ const NavItem = ({ item, index }) => {
   return (
     <a 
       key={index} 
-      href="#" 
       className={`nav-item ${item.active ? 'active' : ''}`}
     >
       <Icon size={18} />

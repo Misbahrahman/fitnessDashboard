@@ -29,7 +29,7 @@ const CalendarView = () => {
             <div className="date-number">26</div>
             <div className="date-times">
               <span className="time-slot">08:00</span>
-              <span className="time-slot highlight-cell ">09:00</span>
+              <span className="time-slot highlightedCell ">09:00</span>
               <span className="time-slot">10:00</span>
             </div>
           </div>

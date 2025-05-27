@@ -1,12 +1,12 @@
 const ActivityFeed = ({activityData}) => {
   return (
-    <div className="activity-card">
-     <div className='activity-header'>
+    <div className="activityCard">
+     <div className='header-activ'>
        <h3>Activity</h3>
-      <p className="activity-summary">3 appointments on this week</p>
+      <p className="summary">3 appointments on this week</p>
      </div>
       
-      <div className="activity-chart">
+      <div className="actchart">
         <div className="chart-bars">
           {activityData.map((dayData, dayIndex) => (
             <div key={dayIndex} className="chart-day">
@@ -24,7 +24,7 @@ const ActivityFeed = ({activityData}) => {
                   />
                 ))}
               </div>
-              <span className="chart-label">{dayData.day}</span>
+              <span className="labelChart">{dayData.day}</span>
             </div>
           ))}
         </div>

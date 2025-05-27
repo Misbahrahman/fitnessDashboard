@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  
 }
 
 body {
@@ -10,38 +9,37 @@ body {
   background-color: #e3edf8;
   color: #333;
   margin: 0;
-  padding: 20px;
+  padding: 15px;
 }
 
 .app {
   display: grid;
-  grid-template-columns: 0.4fr 1fr 1fr;
-  min-height: calc(100vh - 40px);
+  grid-template-columns: 0.35fr 1fr 0.8fr;
+  min-height: calc(100vh - 30px);
   background: #f5f8ff;
-  border-radius: 24px;
+  border-radius: 20px;
   overflow: hidden;
-  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.12);
+  box-shadow: 0 6px 24px rgba(0, 0, 0, 0.12);
   margin: 0 auto;
   max-width: 100%;
 }
 
-/* Left Panel Styles */
 .left-panel {
   background: #F6FAFF;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
-  border-top-left-radius: 24px;
-  border-bottom-left-radius: 24px;
+  gap: 1.5rem;
+  border-top-left-radius: 20px;
+  border-bottom-left-radius: 20px;
 }
 
-.logo-section {
+.logoSection {
   text-align: left;
 }
 
 .logo {
-  font-size: 2.5rem;
+  font-size: 2rem;
   font-weight: 700;
   margin: 0;
 }
@@ -58,32 +56,32 @@ body {
   flex: 1;
 }
 
-.nav-title {
-  font-size: 0.75rem;
+.navig-title {
+  font-size: 0.7rem;
   font-weight: 600;
   color: #9e9e9e;
   text-transform: uppercase;
   letter-spacing: 0.05em;
-  margin-bottom: 1rem;
-  margin-top: 1rem;
-  margin-left: 1rem;
+  margin-bottom: 0.8rem;
+  margin-top: 0.8rem;
+  margin-left: 0.8rem;
 }
 
-.nav-menu {
+.navMenu {
   display: flex;
   flex-direction: column;
-  gap: 0.25rem;
+  gap: 0.2rem;
 }
 
 .nav-item {
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  padding: 0.75rem 1rem;
+  gap: 0.6rem;
+  padding: 0.6rem 0.8rem;
   color: #9e9e9e;
   text-decoration: none;
-  border-radius: 0.75rem;
-  font-size: 1rem;
+  border-radius: 0.6rem;
+  font-size: 0.9rem;
   font-weight: 600;
   transition: all 0.2s;
 }
@@ -95,25 +93,22 @@ body {
 
 .nav-item.active {
   color: #4527a0;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
-/* Middle Panel Styles */
 .middle-panel {
   background: #ffffff;
-  padding: 2rem;
+  padding: 1.5rem;
   display: flex;
   flex-direction: column;
-  gap: 2rem;
+  gap: 1.5rem;
   overflow-y: auto;
 }
-
-
 
 .search-section {
   display: flex;
   justify-content: center;
-  padding-bottom: 1rem;
+  padding-bottom: 0.8rem;
   position: relative;
   display: flex;
   align-items: center;
@@ -121,26 +116,25 @@ body {
 
 .search-icon {
   position: absolute;
-  left: 12px;
+  left: 10px;
   color: #1E1C5C;
 }
 
-
 .bell-icon {
   position: absolute;
-  right: 12px;
+  right: 10px;
   color: #1E1C5C;
   fill: #020341;
 }
 
 .search-input {
   width: 100%;
-  padding: 0.75rem 0.75rem 0.75rem 2.5rem;
+  padding: 0.6rem 0.6rem 0.6rem 2rem;
   border: 1px #e0e7ff;
-  border-radius: 0.75rem;
-  font-size: 0.875rem;
+  border-radius: 0.6rem;
+  font-size: 0.8rem;
   color: #333;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
 }
 
 .search-input::placeholder {
@@ -153,126 +147,134 @@ body {
 }
 
 .dashboard-title h1 {
-  font-size: 2rem;
+  font-size: 1.6rem;
   font-weight: 700;
   color: #020341;
   margin: 0;
 }
 
-.dashboard-content-grid {
+.dashboardGrid {
   display: grid;
-  grid-template-columns: 2fr 1fr;
-  gap: 1rem;
-
+  grid-template-columns: 1.8fr 1fr;
+  align-items: start;
 }
-
-
 
 .anatomy-image-card {
   background: #f6faff;
-  border-radius: 1.5rem;
-  padding: 2rem;
-  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.06);
+  border-radius: 1.2rem;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.06);
   display: flex;
   justify-content: center;
   align-items: center;
   grid-row: span 4;
-  margin-right: 3.5rem;
-  margin-left: 2rem;
-  height: 500px;
-  
+  margin-right: 2rem;
+  margin-left: 1.5rem;
+  height: 400px;
+  min-height: 300px;
 }
 
-.anatomy-image{
+.anatomyImage {
   position: relative;
-}
-
-.human-body{
   width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.healthy-heart{
-  position : absolute;
+.human-body {
+  width: 80%;
+  height: auto;
+  max-height: 100%;
+  object-fit: contain;
+}
+
+.healty-heart {
+  position: absolute;
   top: 20%;
   left: 50%;
   background-color: #3635A9;
   color: white;
-  padding :8px 15px 8px 15px ;
-  border-radius: 10px;
+  padding: 6px 12px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 170px;
+  width: 140px;
   font-weight: 400;
-  font-size: 18px;
+  font-size: 0.9rem;
 }
 
-
-.healthy-leg{
-  position : absolute;
+.healty-leg {
+  position: absolute;
   top: 70%;
-  left: -20px;
+  left: -15px;
   background-color: #01DFEE;
-  color : #3635A9;
-  padding :8px 15px 8px 15px ;
-  border-radius: 10px;
+  color: #3635A9;
+  padding: 6px 12px;
+  border-radius: 8px;
   display: flex;
   align-items: center;
   justify-content: space-between;
-  width: 170px;
-  font-size: 18px;
+  width: 140px;
+  font-size: 0.9rem;
   font-weight: 400;
 }
 
-
-.heart-icon{
+.heart-icon {
   fill: #F43A2F;
   color: #F43A2F;
 }
 
+.health-cards-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
 
 .health-card {
   background: #F6FAFF;
-  padding: 1rem 1.25rem;
-  border-radius: 1.25rem;
-  margin-bottom: 1rem;
-  margin-right: 0.6rem;
+  padding: 0.8rem 1rem;
+  border-radius: 1rem;
+  margin-bottom: 0.8rem;
+  margin-right: 0.5rem;
 }
 
 .health-card-header {
   display: flex;
   align-items: center;
-  gap: 1rem;
-  margin-bottom: 0.75rem;
+  gap: 0.8rem;
+  margin-bottom: 0.6rem;
 }
 
 .health-icon {
-  font-size: 2.5rem;
+  font-size: 2rem;
   display: flex;
   align-items: center;
   justify-content: center;
-  width: 48px;
-  height: 48px;
+  width: 40px;
+  height: 40px;
 }
 
 .health-card-title {
   font-weight: 600;
   color: #020341;
-  font-size: 1.25rem;
+  font-size: 1rem;
   line-height: 1.2;
 }
 
 .health-card-date {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #D5D8DE;
-  margin-bottom: 1rem;
+  margin-bottom: 0.8rem;
   font-weight: 500;
 }
 
 .health-card-progress {
-  height: 10px;
+  height: 8px;
   background: #DEE0EB;
-  border-radius: 8px;
+  border-radius: 6px;
   overflow: hidden;
 }
 
@@ -287,43 +289,42 @@ body {
   color: #4527a0;
   font-weight: 600;
   cursor: pointer;
-  font-size: 0.875rem;
-  margin-top: 20px;
+  font-size: 0.75rem;
+  margin-top: 15px;
   margin-left: 70%;
 }
 
-
-
-.activity-card {
-  font-size: 1.125rem;
+.activityCard {
+  font-size: 1rem;
   font-weight: 600;
   color: #333;
   background-color: #F6FAFF;
-  padding: 20px;
-  border-radius: 1.25rem;
+  padding: 15px;
+  border-radius: 1rem;
 }
 
-.activity-header {
+.header-activ {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  margin-bottom: 2rem;
 }
 
-.activity-header h3 {
-  font-size: 1.25rem;
+.header-activ h3 {
+  font-size: 1rem;
   font-weight: 600;
   color: #333;
   margin: 0;
 }
 
-.activity-summary {
-  font-size: 0.875rem;
+.summary {
+  font-size: 0.75rem;
   color: #9e9e9e;
   font-weight: 400;
 }
 
-.activity-chart {
-  height: 160px;
+.actchart {
+  height: 130px;
   display: flex;
   align-items: end;
   padding: 0;
@@ -334,7 +335,8 @@ body {
   justify-content: space-between;
   align-items: end;
   width: 100%;
-  }
+  
+}
 
 .chart-day {
   display: flex;
@@ -343,8 +345,8 @@ body {
 
 .chart-bar-container {
   position: relative;
-  width: 100px;
-  height: 100px;
+  width: 80px;
+  height: 80px;
   display: flex;
   align-items: end;
   justify-content: center;
@@ -354,9 +356,9 @@ body {
   position: absolute;
   width: 4px;
   border-radius: 2px;
-  min-height: 6px;
-  width: 5px;
-  border-radius: 5px;
+  min-height: 5px;
+  width: 4px;
+  border-radius: 4px;
 }
 
 .chart-bar.grey {
@@ -371,23 +373,22 @@ body {
   background: #4E5899;
 }
 
-.chart-label {
-  font-size: 0.75rem;
+.labelChart {
+  font-size: 0.7rem;
   color: #9e9e9e;
   font-weight: 400;
   text-align: center;
 }
 
-/* Right Panel Styles */
 .right-panel {
   background: #F6FAFF;
-  padding: 2rem 1.5rem;
+  padding: 1.5rem 1rem;
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
+  gap: 1.2rem;
   overflow-y: auto;
-  border-top-right-radius: 24px;
-  border-bottom-right-radius: 24px;
+  border-top-right-radius: 20px;
+  border-bottom-right-radius: 20px;
 }
 
 .profile-section {
@@ -398,7 +399,7 @@ body {
 .profile-icons {
   display: flex;
   align-items: center;
-  gap: 1rem;
+  gap: 0.8rem;
 }
 
 .profile-icon {
@@ -407,8 +408,8 @@ body {
 }
 
 .user-avatar {
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 20%;
   object-fit: cover;
 }
@@ -417,91 +418,84 @@ body {
   background: #4527a0;
   color: white;
   border: none;
-  width: 32px;
-  height: 32px;
+  width: 28px;
+  height: 28px;
   border-radius: 20%;
   margin-bottom: 5px;
-
-    
-
 }
 
 .calendar-header {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 2rem ;
-  margin-left: 2rem;
+  margin-top: 1.5rem;
+  margin-left: 1.5rem;
 }
 
 .week-indicator {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   color: #9e9e9e;
 }
 
 .calendar-nav {
   display: flex;
-  gap: 0.5rem;
+  gap: 0.4rem;
 }
 
 .calendar-nav button {
   background: #ffffff;
   border: 1px solid #e0e7ff;
-  width: 28px;
-  height: 28px;
-  border-radius: 0.375rem;
+  width: 24px;
+  height: 24px;
+  border-radius: 0.3rem;
   cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: center;
   color: #9e9e9e;
-  font-size: 0.875rem;
+  font-size: 0.75rem;
 }
 
 .month-year {
-  font-size: 1.65rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #4527a0;
-
 }
 
 .calendar-grid { 
-  /* padding: 1rem; */
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
-
-
 
 .calendar-days {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 0.25rem;
-  margin-bottom: 0.5rem;
+  gap: 0.2rem;
+  margin-bottom: 0.4rem;
 }
 
 .day-header {
   text-align: center;
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   font-weight: 700;
   color: #1E1C5C;
-  padding: 0.3em 0.15rem;
+  padding: 0.25em 0.1rem;
 }
 
 .calendar-dates {
   display: grid;
   grid-template-columns: repeat(7, 1fr);
-  gap: 0.25rem;
+  gap: 0.2rem;
 }
 
-.date-cell{
-  padding: 20px;
+.date-cell {
+  padding: 15px;
 }
 
 .date-number {
   font-weight: 700;
   color: #3832A8;
-  margin-bottom: 0.25rem;
-  font-size: 1.875rem;
+  margin-bottom: 0.2rem;
+  font-size: 1.5rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -510,65 +504,57 @@ body {
 .date-times {
   display: flex;
   flex-direction: column;
-  gap: 0.125rem;
-
+  gap: 0.1rem;
 }
 
 .time-slot {
-  font-size: 0.8rem;
+  font-size: 0.7rem;
   color: #3832A8;
-  padding: 0.125rem 0.25rem;
+  padding: 0.1rem 0.2rem;
   text-align: center;
   font-weight: 600;
-  height: 25px;
+  height: 20px;
 }
 
-
-.highlight-cell{
+.highlight-cell {
   background-color: #4527A0;
   color: #A8ABE6;
-  border-radius: 0.5rem;
+  border-radius: 0.4rem;
 }
-
 
 .appointment-cards {
-  padding-left: 2rem;
-
+  padding-left: 1.5rem;
   display: flex;
-  /* flex-direction: column; */
-  gap: 0.75rem;
-  margin-bottom: 1.5rem;
+  gap: 0.6rem;
+  margin-bottom: 1.2rem;
 }
 
-.greyed{
+.greyed {
   color: #ACB1D7;
 }
 
-.less-active{
+.less-active {
   background-color: #ACB1D7;
-  border-radius: 10px;
+  border-radius: 8px;
   color: #F3F4FF;
 }
 
-.highlight{
+.highlight {
   background-color: #EDF4FF;
-  border-radius: 1rem;
+  border-radius: 0.8rem;
 }
 
 .appointment-card {
-  padding: 1rem 1.5rem 1rem 1rem;
-  margin-right: 0.5rem;
-  border-radius: 1.5rem;
+  padding: 0.8rem 1.2rem 0.8rem 0.8rem;
+  margin-right: 0.4rem;
+  border-radius: 1.2rem;
   display: flex;
   align-items: start;
   background: #DDE2F9;
   color: #292656;
   justify-content: space-between;
-  gap: 4rem;
+  gap: 2rem;
 }
-
-
-
 
 .appointment-card.dentist {
   background: #4527a0;
@@ -577,59 +563,57 @@ body {
 }
 
 .appointment-icon {
-  font-size: 1.95rem;
+  font-size: 1.5rem;
 }
 
 .appointment-info h4 {
   font-weight: 600;
-  margin-bottom: 0.35rem;
-  font-size: 1.2rem;
+  margin-bottom: 0.3rem;
+  font-size: 1rem;
 }
 
 .appointment-info p {
-  font-size: 0.95rem;
+  font-size: 0.8rem;
   opacity: 0.8;
-  margin-bottom: 0.325rem;
+  margin-bottom: 0.25rem;
   font-weight: 500;
 }
 
 .upcoming-schedule h3 {
-  font-size: 1.625rem;
+  font-size: 1.3rem;
   font-weight: 700;
   color: #4527a0;
-  margin-bottom: 1rem;
-  
+  margin-bottom: 0.8rem;
 }
 
-.upcoming-schedule{
-  margin-left: 2rem;
+.upcoming-schedule {
+  margin-left: 1.5rem;
 }
 
 .schedule-day {
-  margin-bottom: 1.5rem;
+  margin-bottom: 1.2rem;
 }
 
 .day-title {
-  font-size: 0.875rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: #9e9e9e;
-  margin-bottom: 0.75rem;
+  margin-bottom: 0.6rem;
 }
 
 .day-appointments {
   display: flex;
-  /* grid-template-columns: 1fr 1fr; */
-  gap: 0.75rem;
+  gap: 0.6rem;
 }
 
 .simple-appointment-card {
   background: #e0e7ff;
-  padding: 1rem;
-  border-radius: 1rem;
+  padding: 0.8rem;
+  border-radius: 0.8rem;
   display: flex;
   align-items: center;
-  gap: 0.75rem;
-  min-height: 60px;
+  gap: 0.6rem;
+  min-height: 50px;
 }
 
 .appointment-details {
@@ -641,19 +625,55 @@ body {
 .appointment-title {
   font-weight: 600;
   color: #333;
-  font-size: 0.875rem;
-  margin-bottom: 0.25rem;
+  font-size: 0.75rem;
+  margin-bottom: 0.2rem;
 }
 
 .appointment-time {
-  font-size: 0.75rem;
+  font-size: 0.7rem;
   color: #9e9e9e;
 }
 
-/* Responsive Design */
+@media (max-width: 1400px) {
+  .app {
+    grid-template-columns: 0.4fr 1fr 0.9fr;
+  }
+  
+  .anatomy-image-card {
+    height: 350px;
+    margin-right: 1.5rem;
+    margin-left: 1rem;
+  }
+  
+  .healty-heart, .healty-leg {
+    width: 120px;
+    font-size: 0.8rem;
+    padding: 5px 10px;
+  }
+}
+
 @media (max-width: 1200px) {
   .app {
-    grid-template-columns: 250px 1fr 320px;
+    grid-template-columns: 0.45fr 1fr 1fr;
+  }
+  
+  .logo {
+    font-size: 1.8rem;
+  }
+  
+  .dashboard-title h1 {
+    font-size: 1.4rem;
+  }
+  
+  .anatomy-image-card {
+    height: 320px;
+    margin-right: 1rem;
+    margin-left: 0.5rem;
+  }
+  
+  .chart-bar-container {
+    width: 70px;
+    height: 70px;
   }
 }
 
@@ -664,7 +684,7 @@ body {
 
   .app {
     grid-template-columns: 1fr;
-    grid-template-rows: auto 1fr auto;
+    grid-template-rows: auto auto 1fr;
     border-radius: 16px;
     min-height: calc(100vh - 20px);
   }
@@ -673,43 +693,149 @@ body {
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 1rem 1.5rem;
+    padding: 0.8rem 1rem;
     border-radius: 16px 16px 0 0;
+    border-bottom-left-radius: 0;
+  }
+
+  .logo {
+    font-size: 1.5rem;
   }
 
   .navigation-section {
     flex: none;
   }
 
-  .nav-menu {
+  .nav-Menu {
     flex-direction: row;
-    gap: 0.5rem;
+    gap: 0.4rem;
     overflow-x: auto;
   }
 
   .nav-item {
     white-space: nowrap;
     min-width: fit-content;
+    padding: 0.5rem 0.6rem;
+    font-size: 0.8rem;
   }
 
-
-  
   .middle-panel {
     padding: 1rem;
     border-radius: 0;
+    gap: 1rem;
+    order: 2;
+  }
+  
+  .dashboard-title h1 {
+    font-size: 1.3rem;
+  }
+
+  .dashboardGrid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  
+  .anatomy-image-card {
+    height: 280px;
+    margin: 0;
+    grid-row: span 1;
+    order: 1;
+  }
+  
+  .health-cards-container {
+    order: 2;
+  }
+  
+  .activityCard {
+    order: 3;
+  }
+  
+  .healty-heart, .healty-leg {
+    width: 110px;
+    font-size: 0.75rem;
+
+    padding: 4px 8px;
   }
 
   .right-panel {
-    padding: 1rem 1.5rem;
+    padding: 1rem;
     border-radius: 0 0 16px 16px;
+    border-top-right-radius: 0;
+    order: 3;
   }
 
   .search-section {
     justify-content: flex-start;
   }
+  
+  .calendar-header {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  
+  .appointment-cards, .upcoming-schedule {
+    padding-left: 0;
+  }
+  
+  .month-year {
+    font-size: 1.2rem;
+  }
 }
 
 @media (max-width: 768px) {
+  body {
+    padding: 8px;
+  }
+  
+  .app {
+    border-radius: 12px;
+  }
+  
+  .left-panel {
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .logo {
+    font-size: 1.3rem;
+  }
+  
+  .nav-item {
+    padding: 0.4rem 0.5rem;
+    font-size: 0.75rem;
+    gap: 0.4rem;
+  }
+  
+  .middle-panel {
+    padding: 0.8rem;
+  }
+  
+  .dashboard-title h1 {
+    font-size: 1.2rem;
+  }
+  
+  .anatomy-image-card {
+    height: 240px;
+    padding: 1rem;
+  }
+  
+  .healty-heart, .healty-leg {
+    width: 100px;
+    font-size: 0.7rem;
+  }
+  
+  .activityCard {
+    padding: 12px;
+  }
+  
+  .actchart {
+    height: 110px;
+  }
+  
+  .chart-bar-container {
+    width: 60px;
+    height: 60px;
+  }
+
   .calendar-dates {
     grid-template-columns: repeat(4, 1fr);
   }
@@ -717,16 +843,137 @@ body {
   .calendar-days {
     grid-template-columns: repeat(4, 1fr);
   }
-
-  .search-container {
-    width: 250px;
+  
+  .date-cell {
+    padding: 10px;
+  }
+  
+  .date-number {
+    font-size: 1.2rem;
   }
 
   .profile-icons {
     gap: 0.5rem;
   }
+  
+  .user-avatar, .add-button {
+    width: 24px;
+    height: 24px;
+  }
 
   .day-appointments {
-    grid-template-columns: 1fr;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  .appointment-card {
+    gap: 1rem;
+    padding: 0.6rem 1rem 0.6rem 0.6rem;
+  }
+  
+  .appointment-icon {
+    font-size: 1.3rem;
+  }
+  
+  .appointment-info h4 {
+    font-size: 0.9rem;
+  }
+  
+  .appointment-info p {
+    font-size: 0.75rem;
+  }
+}
+
+@media (max-width: 480px) {
+  body {
+    padding: 5px;
+  }
+  
+  .app {
+    border-radius: 10px;
+  }
+  
+  .left-panel {
+    padding: 0.5rem 0.6rem;
+    flex-wrap: wrap;
+  }
+  
+  .logo {
+    font-size: 1.1rem;
+  }
+  
+  .navigation-section {
+    width: 100%;
+    margin-top: 0.5rem;
+  }
+  
+  .nav-menu {
+    justify-content: center;
+  }
+  
+  .nav-item {
+    padding: 0.3rem 0.4rem;
+    font-size: 0.7rem;
+  }
+  
+  .middle-panel {
+    padding: 0.6rem;
+  }
+  
+  .dashboard-title h1 {
+    font-size: 1.1rem;
+  }
+  
+  .anatomy-image-card {
+    height: 200px;
+    padding: 0.8rem;
+  }
+  
+  .healty-heart, .healty-leg {
+    width: 90px;
+    font-size: 0.65rem;
+    padding: 3px 6px;
+  }
+  
+  .search-input {
+    padding: 0.5rem 0.5rem 0.5rem 1.8rem;
+    font-size: 0.75rem;
+  }
+  
+  .health-card {
+    padding: 0.6rem 0.8rem;
+  }
+  
+  .health-card-title {
+    font-size: 0.9rem;
+  }
+  
+  .header-activ h3 {
+    font-size: 0.9rem;
+  }
+  
+  .calendar-dates {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .calendar-days {
+    grid-template-columns: repeat(3, 1fr);
+  }
+  
+  .date-cell {
+    padding: 8px;
+  }
+  
+  .date-number {
+    font-size: 1rem;
+  }
+  
+  .time-slot {
+    font-size: 0.6rem;
+    height: 18px;
+  }
+  
+  .upcoming-schedule h3 {
+    font-size: 1.1rem;
   }
 }

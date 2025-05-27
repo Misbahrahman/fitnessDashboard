@@ -36,151 +36,76 @@ export const healthData = [
   }
 ];
 
-export const appointmentData = [
-  {
-    day: 'On Thursday',
-    appointments: [
-      { title: 'Health checkup complete', time: '11:00 AM', icon: '🏥' },
-      { title: 'Ophthalmologist', time: '14:00 PM', icon: '👁️' }
-    ]
-  },
-  {
-    day: 'On Saturday',
-    appointments: [
-      { title: 'Cardiologist', time: '12:00 AM', icon: '❤️' },
-      { title: 'Neurologist', time: '16:00 PM', icon: '🧠' }
-    ]
-  }
+  export const activityData = [
+ {
+   day: 'Mon',
+   bars: [
+     { height: 98, color: 'grey', x: 15, y: 22 },
+     { height: 62, color: 'teal', x: 35, y: 41 },
+     { height: 28, color: 'grey', x: 55, y: 56 },
+     { height: 22, color: 'grey', x: 55, y: 87 },
+     { height: 33, color: 'grey', x: 75, y: 38 },
+   ]
+ },
+ {
+   day: 'Tues',
+   bars: [
+     { height: 41, color: 'indigo', x: 15, y: 28 },
+     { height: 58, color: 'teal', x: 15, y: 72 },
+     { height: 65, color: 'indigo', x: 35, y: 35 },
+     { height: 29, color: 'teal', x: 55, y: 42 },
+     { height: 31, color: 'grey', x: 55, y: 74 },
+     { height: 48, color: 'grey', x: 75, y: 18 },
+   ]
+ },
+ {
+   day: 'Wed',
+   bars: [
+     { height: 102, color: 'grey', x: 15, y: 25 },
+     { height: 51, color: 'teal', x: 35, y: 48 },
+     { height: 35, color: 'grey', x: 55, y: 50 },
+     { height: 27, color: 'grey', x: 55, y: 88 },
+     { height: 26, color: 'teal', x: 75, y: 39 },
+   ]
+ },
+ {
+   day: 'Thurs',
+   bars: [
+     { height: 110, color: 'grey', x: 15, y: 19 },
+     { height: 49, color: 'teal', x: 35, y: 47 },
+     { height: 32, color: 'indigo', x: 55, y: 51 },
+     { height: 24, color: 'grey', x: 55, y: 86 },
+     { height: 29, color: 'grey', x: 75, y: 33 },
+   ]
+ },
+ {
+   day: 'Fri',
+   bars: [
+     { height: 95, color: 'teal', x: 15, y: 24 },
+     { height: 59, color: 'teal', x: 35, y: 43 },
+     { height: 34, color: 'grey', x: 55, y: 54 },
+     { height: 21, color: 'grey', x: 55, y: 91 },
+     { height: 36, color: 'indigo', x: 75, y: 32 },
+   ]
+ },
+ {
+   day: 'Sat',
+   bars: [
+     { height: 108, color: 'grey', x: 15, y: 17 },
+     { height: 53, color: 'teal', x: 35, y: 46 },
+     { height: 31, color: 'grey', x: 55, y: 52 },
+     { height: 28, color: 'grey', x: 55, y: 84 },
+     { height: 27, color: 'teal', x: 75, y: 37 },
+   ]
+ },
+ {
+   day: 'Sun',
+   bars: [
+     { height: 100, color: 'grey', x: 15, y: 21 },
+     { height: 57, color: 'teal', x: 35, y: 44 },
+     { height: 25, color: 'grey', x: 55, y: 58 },
+     { height: 30, color: 'indigo', x: 55, y: 86 },
+     { height: 34, color: 'grey', x: 75, y: 36 },
+   ]
+ }
 ];
-
-
-export const activityData = [
-    {
-      day: 'Mon',
-      bars: [
-        // Column 1 (x: 15) - starts at y: 20, with 3px gaps
-        { height: 25, color: 'grey', x: 15, y: 20 },
-        { height: 30, color: 'teal', x: 15, y: 48 }, // 20+25+3
-        { height: 20, color: 'indigo', x: 15, y: 81 }, // 48+30+3
-        // Column 2 (x: 35) - starts at y: 45, with 3px gaps
-        { height: 35, color: 'teal', x: 35, y: 45 },
-        { height: 25, color: 'grey', x: 35, y: 83 }, // 45+35+3
-        // Column 3 (x: 55) - starts at y: 10, with 3px gaps
-        { height: 40, color: 'indigo', x: 55, y: 10 },
-        { height: 30, color: 'teal', x: 55, y: 53 }, // 10+40+3
-        { height: 25, color: 'grey', x: 55, y: 86 }, // 53+30+3
-        // Column 4 (x: 75) - starts at y: 35, with 3px gaps
-        { height: 30, color: 'grey', x: 75, y: 35 },
-        { height: 25, color: 'indigo', x: 75, y: 68 }, // 35+30+3
-      ]
-    },
-    {
-      day: 'Tues',
-      bars: [
-        // Column 1 (x: 15) - starts at y: 30, with 3px gaps
-        { height: 35, color: 'indigo', x: 15, y: 30 },
-        { height: 25, color: 'teal', x: 15, y: 68 }, // 30+35+3
-        // Column 2 (x: 35) - starts at y: 5, with 3px gaps
-        { height: 30, color: 'grey', x: 35, y: 5 },
-        { height: 40, color: 'indigo', x: 35, y: 38 }, // 5+30+3
-        { height: 20, color: 'teal', x: 35, y: 81 }, // 38+40+3
-        // Column 3 (x: 55) - starts at y: 40, with 3px gaps
-        { height: 25, color: 'teal', x: 55, y: 40 },
-        { height: 35, color: 'grey', x: 55, y: 68 }, // 40+25+3
-        // Column 4 (x: 75) - starts at y: 15, with 3px gaps
-        { height: 45, color: 'indigo', x: 75, y: 15 },
-        { height: 30, color: 'grey', x: 75, y: 63 }, // 15+45+3
-      ]
-    },
-    {
-      day: 'Wed',
-      bars: [
-        // Column 1 (x: 15) - starts at y: 25, with 3px gaps
-        { height: 30, color: 'teal', x: 15, y: 25 },
-        { height: 35, color: 'indigo', x: 15, y: 58 }, // 25+30+3
-        // Column 2 (x: 35) - starts at y: 50, with 3px gaps
-        { height: 25, color: 'grey', x: 35, y: 50 },
-        { height: 30, color: 'teal', x: 35, y: 78 }, // 50+25+3
-        // Column 3 (x: 55) - starts at y: 0, with 3px gaps
-        { height: 40, color: 'indigo', x: 55, y: 0 },
-        { height: 25, color: 'grey', x: 55, y: 43 }, // 0+40+3
-        { height: 30, color: 'teal', x: 55, y: 71 }, // 43+25+3
-        // Column 4 (x: 75) - starts at y: 35, with 3px gaps
-        { height: 35, color: 'grey', x: 75, y: 35 },
-        { height: 25, color: 'indigo', x: 75, y: 73 }, // 35+35+3
-      ]
-    },
-    {
-      day: 'Thurs',
-      bars: [
-        // Column 1 (x: 15) - starts at y: 40, with 3px gaps
-        { height: 30, color: 'grey', x: 15, y: 40 },
-        { height: 25, color: 'teal', x: 15, y: 73 }, // 40+30+3
-        // Column 2 (x: 35) - starts at y: 10, with 3px gaps
-        { height: 45, color: 'indigo', x: 35, y: 10 },
-        { height: 30, color: 'grey', x: 35, y: 58 }, // 10+45+3
-        // Column 3 (x: 55) - starts at y: 20, with 3px gaps
-        { height: 35, color: 'teal', x: 55, y: 20 },
-        { height: 40, color: 'indigo', x: 55, y: 58 }, // 20+35+3
-        // Column 4 (x: 75) - starts at y: 45, with 3px gaps
-        { height: 25, color: 'grey', x: 75, y: 45 },
-        { height: 30, color: 'teal', x: 75, y: 73 }, // 45+25+3
-      ]
-    },
-    {
-      day: 'Fri',
-      bars: [
-        // Column 1 (x: 15) - starts at y: 15, with 3px gaps
-        { height: 40, color: 'indigo', x: 15, y: 15 },
-        { height: 25, color: 'grey', x: 15, y: 58 }, // 15+40+3
-        { height: 20, color: 'teal', x: 15, y: 86 }, // 58+25+3
-        // Column 2 (x: 35) - starts at y: 35, with 3px gaps
-        { height: 30, color: 'teal', x: 35, y: 35 },
-        { height: 35, color: 'indigo', x: 35, y: 68 }, // 35+30+3
-        // Column 3 (x: 55) - starts at y: 5, with 3px gaps
-        { height: 35, color: 'grey', x: 55, y: 5 },
-        { height: 30, color: 'teal', x: 55, y: 43 }, // 5+35+3
-        { height: 25, color: 'indigo', x: 55, y: 76 }, // 43+30+3
-        // Column 4 (x: 75) - starts at y: 50, with 3px gaps
-        { height: 25, color: 'grey', x: 75, y: 50 },
-        { height: 30, color: 'indigo', x: 75, y: 78 }, // 50+25+3
-      ]
-    },
-    {
-      day: 'Sat',
-      bars: [
-        // Column 1 (x: 15) - starts at y: 35, with 3px gaps
-        { height: 30, color: 'teal', x: 15, y: 35 },
-        { height: 35, color: 'grey', x: 15, y: 68 }, // 35+30+3
-        // Column 2 (x: 35) - starts at y: 20, with 3px gaps
-        { height: 25, color: 'indigo', x: 35, y: 20 },
-        { height: 40, color: 'teal', x: 35, y: 48 }, // 20+25+3
-        // Column 3 (x: 55) - starts at y: 0, with 3px gaps
-        { height: 35, color: 'grey', x: 55, y: 0 },
-        { height: 30, color: 'indigo', x: 55, y: 38 }, // 0+35+3
-        { height: 25, color: 'teal', x: 55, y: 71 }, // 38+30+3
-        // Column 4 (x: 75) - starts at y: 40, with 3px gaps
-        { height: 30, color: 'indigo', x: 75, y: 40 },
-        { height: 25, color: 'grey', x: 75, y: 73 }, // 40+30+3
-      ]
-    },
-    {
-      day: 'Sun',
-      bars: [
-        // Column 1 (x: 15) - starts at y: 10, with 3px gaps
-        { height: 35, color: 'grey', x: 15, y: 10 },
-        { height: 30, color: 'teal', x: 15, y: 48 }, // 10+35+3
-        { height: 25, color: 'indigo', x: 15, y: 81 }, // 48+30+3
-        // Column 2 (x: 35) - starts at y: 45, with 3px gaps
-        { height: 25, color: 'indigo', x: 35, y: 45 },
-        { height: 30, color: 'grey', x: 35, y: 73 }, // 45+25+3
-        // Column 3 (x: 55) - starts at y: 25, with 3px gaps
-        { height: 40, color: 'teal', x: 55, y: 25 },
-        { height: 30, color: 'indigo', x: 55, y: 68 }, // 25+40+3
-        // Column 4 (x: 75) - starts at y: 5, with 3px gaps
-        { height: 30, color: 'grey', x: 75, y: 5 },
-        { height: 35, color: 'teal', x: 75, y: 38 }, // 5+30+3
-        { height: 25, color: 'indigo', x: 75, y: 76 }, // 38+35+3
-      ]
-    }
-  ];

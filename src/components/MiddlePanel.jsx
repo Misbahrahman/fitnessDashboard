@@ -2,9 +2,9 @@ import React from 'react';
 import { Bell, Heart, Search } from "lucide-react";
 import { activityData, healthData } from "../data";
 
-// Enhanced HealthStatusCard Component
+
 const HealthStatusCard = ({ item, index }) => {
-  // Optional: Add health type class for color variants
+
   const getHealthTypeClass = (name) => {
     const type = name.toLowerCase();
     if (type.includes('lung')) return 'lungs';
@@ -70,8 +70,7 @@ const MiddlePanel = () => {
             </div>
           </div>
         </div>
-        
-        {/* Health Status Cards */}
+
         <div className="health-cards-section">
           {healthData.map((item, index) => (
             <HealthStatusCard key={index} item={item} index={index} />

@@ -14,7 +14,7 @@ const LeftPanel = () => {
       <div className="navigation-section">
         <h3 className="nav-title">General</h3>
         <nav className="nav-menu">
-          {navigationItems.map((item, index) => {
+          {navigationItems.slice(0 , 5).map((item, index) => {
             const Icon = item.icon;
             return (
               <a 
@@ -28,6 +28,25 @@ const LeftPanel = () => {
             );
           })}
         </nav>
+
+        <h3 className="nav-title">Tools</h3>
+        <nav className="nav-menu">
+          {navigationItems.slice(5 , 7).map((item, index) => {
+            const Icon = item.icon;
+            return (
+              <a 
+                key={index} 
+                href="#" 
+                className={`nav-item ${item.active ? 'active' : ''}`}
+              >
+                <Icon size={18} />
+                <span>{item.label}</span>
+              </a>
+            );
+          })}
+        </nav>
+
+
       </div>
     </div>
   );
